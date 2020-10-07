@@ -8,8 +8,18 @@ int main(){
     Computadora PC2;
 
     PC2.setRAM(1024);
+    PC2.setSO("Linux");
+    PC2.setProcesador("AMD");
+    PC2.setnombre_equipo("Angel");
     cout <<PC2.getRAM() <<endl;
+    cout <<PC2.getSO() <<endl;
+    cout <<PC2.getProcesador() <<endl;
+    cout <<PC2.getnombre_equipo() <<endl;
+
     cout <<PC1.getRAM() <<endl;
+    cout <<PC1.getSO() <<endl;
+    cout <<PC1.getProcesador() <<endl;
+    cout <<PC1.getnombre_equipo() <<endl;
 
    return 0; 
 }
