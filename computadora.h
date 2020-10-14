@@ -22,6 +22,14 @@ class Computadora {
     string getSO();
     string getProcesador();
     string getnombre_equipo();
+    friend ostream& operator<<(ostream &out, const Computadora &p){
+        out <<p.RAM << endl;
+        out <<p.SO << endl;
+        out <<p.Procesador << endl;
+        out <<p.nombre_equipo << endl;
+
+        return out;
+    }
 };
 
 #endif
