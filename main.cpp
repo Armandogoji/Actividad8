@@ -26,9 +26,10 @@ int main(){
     lab.agregarComputadora(PC3);
     lab.agregarComputadora(PC4);
 
-    lab.mostrar();
+    //lab.mostrar();
     
-    
+    cout << PC1;
+
     //cout <<PC2.getRAM() <<endl;
     //cout <<PC2.getSO() <<endl;
     //cout <<PC2.getProcesador() <<endl;
