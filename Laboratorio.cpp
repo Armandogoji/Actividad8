@@ -14,11 +14,18 @@ void Laboratorio::agregarComputadora(const Computadora &c){
 }
 
 void Laboratorio::mostrar(){
+    cout << left;
+    cout << setw(7) << "RAM";
+    cout << setw(10) << "SO";
+    cout << setw(12) << "Procesador";
+    cout << setw(10) << "Nom.Equipo";
+    cout << endl;
     for(size_t i = 0; i < cont; i++){
         Computadora &c = arreglo[i];
-        cout <<"RAM: "<<c.getRAM()<<endl;
-        cout <<"Sistema Operativo: "<<c.getSO()<<endl;
-        cout <<"Procesador: "<<c.getProcesador()<<endl;
-        cout <<"Nombre de la maquina: "<<c.getnombre_equipo()<<endl;
+        cout << c;
+        //cout <<"RAM: "<<c.getRAM()<<endl;
+        //cout <<"Sistema Operativo: "<<c.getSO()<<endl;
+        //cout <<"Procesador: "<<c.getProcesador()<<endl;
+        //cout <<"Nombre de la maquina: "<<c.getnombre_equipo()<<endl;
     }
 }
