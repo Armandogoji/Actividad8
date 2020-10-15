@@ -32,6 +32,17 @@ class Computadora {
         out << endl;
         return out;
     }
+    friend istream& operator>>(istream &in, Computadora &p){
+        cout << "RAM: ";
+        cin >> p.RAM;
+        cout << "SO: ";
+        getline(cin, p.SO);
+        cout << "Procesador: ";
+        getline(cin, p.Procesador);
+        cout << "Nombre del equipo: ";
+        getline(cin, p.nombre_equipo);
+        return in;
+    }
 };
 
 #endif

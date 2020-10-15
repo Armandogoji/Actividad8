@@ -21,15 +21,17 @@ int main(){
     PC4.setnombre_equipo("Armando");
 
     Laboratorio lab;
-    lab.agregarComputadora(PC1);
-    lab.agregarComputadora(PC2);
-    lab.agregarComputadora(PC3);
-    lab.agregarComputadora(PC4);
-
-    lab.mostrar();
+    //lab.agregarComputadora(PC1);
+    //lab.agregarComputadora(PC2);
+    //lab.agregarComputadora(PC3);
+    //lab.agregarComputadora(PC4);
+    lab << PC1 << PC2 << PC3 << PC4;
     
+    Computadora PC5;
+    cin >> PC5;
+    lab << PC5;
     //cout << PC1;
-
+    lab.mostrar();
     //cout <<PC2.getRAM() <<endl;
     //cout <<PC2.getSO() <<endl;
     //cout <<PC2.getProcesador() <<endl;
