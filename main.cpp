@@ -5,6 +5,10 @@ using namespace std;
 
 
 int main(){
+    Laboratorio l;
+    l.recuperar();
+    l.mostrar();
+    /*
     Computadora PC1 = Computadora(2048, "Windows", "Intel", "Roberto");
     Computadora PC2;
     Computadora PC3 = Computadora(4096, "Mac", "Intel", "Carlos");
@@ -21,18 +25,22 @@ int main(){
     PC4.setnombre_equipo("Armando");
 
     Laboratorio lab;
-    //lab.agregarComputadora(PC1);
-    //lab.agregarComputadora(PC2);
-    //lab.agregarComputadora(PC3);
-    //lab.agregarComputadora(PC4);
     lab << PC1 << PC2 << PC3 << PC4;
     
     Computadora PC5;
     cin >> PC5;
     lab << PC5;
     lab.mostrar();
-    lab.respaldar_tabla();
-    lab.respaldar();
+    */
+
+
+
+    //lab.agregarComputadora(PC1);
+    //lab.agregarComputadora(PC2);
+    //lab.agregarComputadora(PC3);
+    //lab.agregarComputadora(PC4);
+    //lab.respaldar_tabla();
+    //lab.respaldar();
     //cout << PC1;
     //cout <<PC2.getRAM() <<endl;
     //cout <<PC2.getSO() <<endl;
