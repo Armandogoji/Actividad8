@@ -31,6 +31,7 @@ int main(){
     cin >> PC5;
     lab << PC5;
     lab.mostrar();
+    lab.respaldar_tabla();
     //cout << PC1;
     //cout <<PC2.getRAM() <<endl;
     //cout <<PC2.getSO() <<endl;
