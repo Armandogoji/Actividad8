@@ -30,7 +30,7 @@ void Laboratorio::mostrar(){
     }
 }
 void Laboratorio::respaldar_tabla(){
-    ofstream archivo("Computadoras.txt");
+    ofstream archivo("Computadoras_tabla.txt");
     if (archivo.is_open()){
         archivo << left;
         archivo << setw(7) << "RAM";
@@ -41,6 +41,19 @@ void Laboratorio::respaldar_tabla(){
         for(size_t i = 0; i < cont; i++){
         Computadora &c = arreglo[i];
         archivo << c;
+        }
+    }
+    archivo.close();
+}
+void Laboratorio::respaldar(){
+    ofstream archivo("Computadoras.txt");
+    if (archivo.is_open()){
+        for(size_t i = 0; i < cont; i++){
+        Computadora &c = arreglo[i];
+        archivo << c.getRAM() << endl;
+        archivo << c.getSO() << endl;
+        archivo << c.getProcesador() << endl;
+        archivo << c.getnombre_equipo() << endl;
         }
     }
     archivo.close();

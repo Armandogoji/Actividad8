@@ -12,6 +12,7 @@ class Laboratorio{
     void agregarComputadora(const Computadora &c);
     void mostrar();
     void respaldar_tabla();
+    void respaldar();
 
     friend Laboratorio& operator<<(Laboratorio &l, const Computadora &c){
         l.agregarComputadora(c);
