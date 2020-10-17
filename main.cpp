@@ -30,8 +30,8 @@ int main(){
     Computadora PC5;
     cin >> PC5;
     lab << PC5;
-    //cout << PC1;
     lab.mostrar();
+    //cout << PC1;
     //cout <<PC2.getRAM() <<endl;
     //cout <<PC2.getSO() <<endl;
     //cout <<PC2.getProcesador() <<endl;

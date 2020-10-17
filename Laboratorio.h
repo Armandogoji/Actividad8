@@ -12,8 +12,8 @@ class Laboratorio{
     void agregarComputadora(const Computadora &c);
     void mostrar();
 
-    friend Laboratorio& operator<<(Laboratorio &l, const Computadora &p){
-        l.agregarComputadora(p);
+    friend Laboratorio& operator<<(Laboratorio &l, const Computadora &c){
+        l.agregarComputadora(c);
         return l;
     }
 };

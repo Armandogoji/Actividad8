@@ -23,24 +23,28 @@ class Computadora {
     string getSO();
     string getProcesador();
     string getnombre_equipo();
-    friend ostream& operator<<(ostream &out, const Computadora &p){
+    friend ostream& operator<<(ostream &out, const Computadora &c){
         out << left;
-        out << setw(7) << p.RAM;
-        out << setw(10) << p.SO;
-        out << setw(12) << p.Procesador;
-        out << setw(10) << p.nombre_equipo;
+        out << setw(7) << c.RAM;
+        out << setw(10) << c.SO;
+        out << setw(12) << c.Procesador;
+        out << setw(10) << c.nombre_equipo;
         out << endl;
         return out;
     }
-    friend istream& operator>>(istream &in, Computadora &p){
+    friend istream& operator>>(istream &in, Computadora &c){
         cout << "RAM: ";
-        cin >> p.RAM;
+        cin >> c.RAM;
+        
         cout << "SO: ";
-        getline(cin, p.SO);
+        getline(cin, c.SO);
+
         cout << "Procesador: ";
-        getline(cin, p.Procesador);
+        getline(cin, c.Procesador);
+
         cout << "Nombre del equipo: ";
-        getline(cin, p.nombre_equipo);
+        getline(cin, c.nombre_equipo);
+
         return in;
     }
 };
